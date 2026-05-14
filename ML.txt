@@ -36,7 +36,7 @@ for feature in numerical_features:
     outliers=housing_df[(housing_df[feature] < lower_bound) | (housing_df[feature] > upper_bound)]
     outliers_summary=len(outliers)
     print(f"{feature}:{len(outliers)} outliers")
-
+------------------------------------------------------------
 L2:
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -54,7 +54,7 @@ plt.show()
 sns.pairplot(california,diag_kind='kde',plot_kws={'alpha':0.5})
 plt.title("pp")
 plt.show()                                                  
-
+-----------------------------------------------------------------
 L3:
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -90,7 +90,7 @@ plt.ylabel('Principal Component 2')
 plt.legend()
 plt.grid()
 plt.show()
-
+----------------------------------------------------------------------
 L4:
 import pandas as pd
 def find_s(file_path):
@@ -113,7 +113,7 @@ def find_s(file_path):
 file_path=r'C:\Users\HP\Downloads\training_data.csv'
 hypothesis=find_s(file_path)
 print("final hy:",hypothesis)
-            
+ ----------------------------------------------------------------           
 L5: 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -180,7 +180,7 @@ for k in k_values:
     plt.legend()
     plt.grid(True)
     plt.show()
-
+---------------------------------------------------------------------
 L6:
 import numpy as np
 import matplotlib.pyplot as plt
@@ -216,7 +216,7 @@ plt.title('Locally Weighted Regression', fontsize=14)
 plt.legend(fontsize=10)
 plt.grid(alpha=0.3)
 plt.show()
-
+------------------------------------------------------------------
 L7:
 import numpy as np
 import pandas as pd
@@ -287,7 +287,7 @@ if __name__ == "__main__":
     linear_regression_california()
     polynomial_regression_auto_mpg()
 
-
+--------------------------------------------------------------------
 L8:
 import numpy as np
 import matplotlib.pyplot as plt
@@ -317,7 +317,7 @@ plt.figure(figsize=(10,6))
 tree.plot_tree(clf,filled=True,feature_names=data.feature_names,class_names=data.target_names)
 plt.title("dtc")
 plt.show()
-    
+------------------------------------------------------------------    
 L9:
 import numpy as np
 from sklearn.datasets import fetch_olivetti_faces
@@ -355,7 +355,7 @@ for ax, image, label, prediction in zip(axes.ravel(), X_test, y_test, y_pred):
     ax.axis('off')
 
 plt.show()
-
+------------------------------------------------------------
 L10:
 import numpy as np
 import pandas as pd
