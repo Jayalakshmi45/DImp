@@ -3,8 +3,41 @@ dependencies: Selenium java, TestNG
 plugins: main- Maven resource plugin,
          test- maven jar plugin   
          maven site plugin
+create new project add pom.xml file ,add indx,style and logo  add it to github
+create a docs folder : plugins(maven resoruce plugin) , mvn clean install docs created then push to github
+test: webpage, run test
+packaging jar : mvn jar plugin : mvn clean package
+mvn site plugin --> mvn site
+deploy--> mvn deploy
+
+
+Exp 3.1
+java-gradle-groovy
+edit build.gradle and main 
+gradle run
+add docs folder
+test: dependencies : selenium,TestNG
+WebPageTest
+gradle test
+packing to jar:plugins{id "java"} jar{manifest{attribute'Main-Class':"org.example.Main"}}
+java -jar ./jar file
+
+Exp 3.2
+kotil-gradle-kotlin
+edit build.gradle.kts and create main.kts
+to build -->./gradlew build
+to run --> ./gradlew run
+packing as jar: create a fat jar
+build a fat jar --> ./gradlew fatJar
+run fat jar--> java -jar ./path
+
+
 Exp5
 to open jenkins : java -jar jenkins.war --httpPort=9090
+
+Exp6:
+none: build step : cd mvn project path    , mvn test
+git: mvn test
 
 Exp 7
 sudo apt update
