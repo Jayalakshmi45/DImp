@@ -31,6 +31,12 @@ packing as jar: create a fat jar
 build a fat jar --> ./gradlew fatJar
 run fat jar--> java -jar ./path
 
+Exp4
+take mvn project create a jar file: mvn clean complile,mvn package(jar),java -jar ./path,mvn clean install
+to convert maven to gradle : gradle init --type pom
+now build jar file in gradle: add plugin id "java", 
+gradle clean build --> jar file created
+java -jar ./path jar file 
 
 Exp5
 to open jenkins : java -jar jenkins.war --httpPort=9090
